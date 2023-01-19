@@ -1,0 +1,29 @@
+.img-one{
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-left: 0px;
+}
+
+.primary {
+    color: #3b3f48;
+    border-bottom: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.secondary {
+    color: #3b3f48;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.container {
+    background-color: #f8f6f7;
+}
+
+.secondary {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}

@@ -1,0 +1,220 @@
+* {
+    /* font-family: 'IBM Plex Sans', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Lexend', sans-serif; */
+    /* font-family: 'Space Grotesk', sans-serif; */
+
+
+}
+
+
+
+/* nav bar  */
+.links:hover{
+    background-color: #6680d6;
+}
+.nav {
+    background-color: #072044;
+    /* background-color: #43b7e1; */
+    /* background-color: #3b3f48; */
+    /* background-color: #2f3437; */
+    /* background-color: #171e27; */
+
+}
+
+
+header {
+    overflow-y: hidden;
+}
+
+.uni-block-pic {
+    height: auto;
+    width: 100%;
+    padding: 3% 3%;
+    margin-top: 5px;
+    padding-bottom: 0px;
+}
+
+
+.container-fluid {
+    margin-top: 20px;
+
+}
+
+
+/*  -------------*/
+
+
+.clg-name {
+    margin-right: 100px;
+    padding-left: 0px;
+}
+
+.text-reset {
+    text-decoration: none;
+}
+
+.img {
+    width: 180px;
+    margin-bottom: 35px;
+
+}
+
+.container-fluid {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+.dropdown-menu>li:hover>.submenu {
+    display: block;
+}
+
+.navbar-collapse {
+    
+    margin-left: 1%;
+}
+
+.nav-item {
+    padding-left: 0.7%;
+
+}
+
+
+
+a.nav-link {
+   
+    color: rgb(255, 255, 235);
+}
+
+
+.navbar-logo {
+    height: 50px;
+    width: 50px;
+    padding: 3px;
+    margin-left: 2%;
+}
+
+/* ----------- */
+
+
+/* --------MARQUEEE---------- */
+
+
+
+
+
+
+
+
+.news{
+    width: 80%;
+    background: #3b3f48;
+    padding: 0 2%
+}
+
+.title{
+    width: 20%;
+    text-align: center;
+    background: #f4bb1d ;
+    position: relative
+}
+
+
+
+.title h5{
+    font-size: 18px;
+    margin: 8% 0;
+    color: white;
+}
+
+.news marquee{
+    font-size: 20px;
+    margin-top: 17px;
+    color: white;
+}
+
+.news-content p{
+    
+    display: inline-block;
+    text-shadow: 1px 1px #df606c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------- */
+
+
+
+/* footer  */
+.text-reset-one {
+    text-decoration: none;
+    color: rgb(255, 255, 235);
+}
+
+h6 {
+    color: rgb(255, 255, 235);
+}
+
+.clg-name {
+    margin-left: 15%;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+}
+
+
+footer {
+    padding-top: 50px;
+    background-color: #072044;
+    /* background-color: #2f3437; */
+    /* background-color: #171e27; */
+    /* background-color:#0c1536; */
+    margin-top: 100px;
+
+}
+
+
+.img {
+    width: 100px;
+    height: 100px;
+    margin-left: 25%;
+}
+
+.Copyright-text{
+    color: rgb(198, 200, 202);
+    text-align: center;
+}
+
+.row {
+    margin-right: 0px;
+
+
+}
+
+.para-text{
+    margin-left: 0px;
+    padding-left:0px;
+}
+
+/* ---------------- */

@@ -1,0 +1,54 @@
+{% extends "Base.html" %}
+{% load static %}
+
+{% block content %}
+    <style>
+      .heading---1 {
+        border-bottom: 1px solid black;
+        padding: 20px;
+      }
+      .in {
+        margin-top: 40px;
+        padding: 16px;
+      }
+
+      .second {
+        margin-bottom: 36px;
+      }
+      .dost {
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        border: 1px solid gray;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        display: block;
+        width: 90%;
+        background-color: rgba(69, 61, 68, 0.39);
+      }
+      .sec {
+        border-bottom: 1px solid black;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading---1">Rules :</h1>
+      <div class="in">
+        <h2 class="second">Admission Rules:</h2>
+        <a href="https://dost.cgg.gov.in/" class="dost"
+          >https://dost.cgg.gov.in/</a
+        >
+        <h2 class="sec">Attendance Rules:</h2>
+        <p class="para-1">
+          Every student should have 75% or above attendance per semester,
+          otherwise they not entitled to avail themselves any kind of academic
+          benefits/facilities.
+        </p>
+      </div>
+    </div>
+{% endblock content %}

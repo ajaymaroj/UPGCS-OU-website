@@ -1,0 +1,47 @@
+{% extends "Base.html" %}
+{% load static %}
+
+{% block content %}
+    <style>
+      .outer {
+        padding: 26px;
+        margin-top: 36px;
+      }
+      .heading1 {
+        border-bottom: 1px solid black;
+        padding: 30px;
+      }
+      .link {
+        text-decoration: none;
+        color: black;
+        padding: 20px;
+        border: 1px solid gray;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        display: block;
+        width: 90%;
+        background-color: rgba(69, 61, 68, 0.39);
+      }
+      .link:hover {
+        /* background-color: ; */
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading1">Procedure for Admission:</h1>
+      <div class="outer">
+        <div class="adm-links">
+          <a href="https://dost.cgg.gov.in/" target="_blank"  class="link"
+            >Admission procedure for all the U.G. students is through
+            DOST(Degree Online Services, Telangana)</a
+          >
+          <a href="https://dost.cgg.gov.in/studentlogin.do" target="_blank"  class="link">Student Login</a>
+          <a href="https://dost.cgg.gov.in/homepage.do?mode=bulletin" target="_blank"  class="link">Information Bulletin</a>
+          <a href="https://dost.cgg.gov.in/dost/howtoapply.html" target="_blank"  class="link">How to Apply </a>
+        </div>
+      </div>
+    </div>
+
+  {% endblock content %}

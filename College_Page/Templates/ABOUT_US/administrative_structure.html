@@ -1,0 +1,127 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <style>
+      .primary {
+        color: #81505f;
+        border-bottom: 2px solid black;
+        padding: 20px;
+        margin-bottom: 50px;
+      }
+      .container {
+        background-color: #f8f6f7;
+      }
+      thead {
+        font-weight: bold;
+      }
+      .secondary {
+        margin-top: 40px;
+        border-bottom: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  
+    <div class="container">
+      <h1 class="primary">Administrative Structure :</h1>
+      <table class="table table-bordered table-hover margin">
+        <thead>
+          <td scope="col">Subject</td>
+          <td scope="row">Incharge Name</td>
+        </thead>
+        <tbody>
+          <td scope="col">Principal</td>
+          <td scope="row">Prof. B.Sudhkar Reddy</td>
+          <tr>
+            <td scope="col">Vice-Principal</td>
+            <td scope="row">Dr. Arati Jadhav</td>
+          </tr>
+          <tr>
+            <td scope="col">Exam Incharge</td>
+            <td scope="row">Dr. Shankar Sampangi</td>
+          </tr>
+          <tr>
+            <td scope="col">Academic Coordinator</td>
+            <td scope="row">Dr.S. Ravi</td>
+          </tr>
+          <tr>
+            <td scope="col">NSS Program Officers (Men)</td>
+            <td scope="row">Dr. K. Kiran</td>
+          </tr>
+          <tr>
+            <td scope="col">NSS Program Officers (Women)</td>
+            <td scope="row">Dr.Naveena Grape Kumari</td>
+          </tr>
+          <tr>
+            <td scope="col">Women Empowerment Cell</td>
+            <td scope="row">Dr. Uma Dixit</td>
+          </tr>
+          <tr>
+            <td scope="col">Internal Complaints</td>
+            <td scope="row">Dr.Mrudula Lakkaraju</td>
+          </tr>
+          <tr>
+            <td scope="col">IQAC Coordinator</td>
+            <td scope="row">Dr.Mrudula Lakkaraju</td>
+          </tr>
+          <!-- <tr>
+            <td scope="col">Hostel Mess Warden</td>
+            <td scope="row">K. Rajeder</td>
+          </tr> -->
+          <tr>
+            <td scope="col">Hostel General Warden</td>
+            <td scope="row">Dr. P. Murali</td>
+          </tr>
+          <tr>
+            <td scope="col">Placement Officer</td>
+            <td scope="row">Dr. A. Edukondalu</td>
+          </tr>
+          <tr>
+            <td scope="col">Assistant Register</td>
+            <td scope="row">Mr. T. Sharath Babu</td>
+          </tr>
+          <!-- <tr>
+            <td scope="col">Hostel Vice Principal</td>
+            <td scope="row">-------</td>
+          </tr> -->
+          <tr>
+            <td scope="col">NCC Officer</td>
+            <td scope="row">Mr.Mallaiah</td>
+          </tr>
+          <tr>
+            <td scope="col">Assistant Librarian</td>
+            <td scope="row">Dr.S. Sandhya Rani</td>
+          </tr>
+          <tr>
+            <td scope="col">Medical Officer</td>
+            <td scope="row">-------</td>
+          </tr>
+          <tr>
+            <td scope="col">Academic Research Committee Coordinator</td>
+            <td scope="row">Mr. A. Srinivas</td>
+          </tr>
+          <tr>
+            <td scope="col">Alumni Coordinator</td>
+            <td scope="row">Dr. K. Kiran</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="secondary">Committiees :</h2>
+      <ul>
+        <li>Finance committee</li>
+        <li>Advisory Committee</li>
+        <li>Admissions Committee</li>
+        <li>Sports & Cultural Committee</li>
+        <li>Hostel & Mess Committee</li>
+        <li>Library Committee</li>
+        <li>Students Advisory and Welfare Committee</li>
+        <li>Infrastructure Development Committee</li>
+        <li>UGC Co-ordination Committee</li>
+        <li>Quality Monitoring Cell</li>
+        <li>Anti Ragging Committee</li>
+        <li>Women's Grievence Redressal Committee</li>
+      </ul>
+    </div>
+
+    {% endblock content %}

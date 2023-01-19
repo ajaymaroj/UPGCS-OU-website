@@ -1,0 +1,118 @@
+{% extends "Base.html" %}
+{% load static %}
+{% block content %}
+    <style>
+      .inn {
+        padding: 15px;
+        margin-top: 30px;
+      }
+      .head {
+        border-bottom: 1px solid black;
+        padding: 20px;
+      }
+      .three {
+        margin-bottom: 26px;
+      }
+      .three-3 {
+        margin-top: 20px;
+        margin-bottom: 12px;
+        border-bottom: 1px solid black;
+        padding: 12px;
+      }
+      .course {
+        padding: 12px;
+      }
+    </style>
+
+
+    <div class="container">
+      <h1 class="head">Reservations :</h1>
+      <div class="inn">
+        <p class="para-1">
+          Admissions will be decided subject to the rules in force regarding
+          reservations which are as under
+        </p>
+        <h3 class="three">Local & Non Local Candidates :</h3>
+        <p class="para-three">
+          Admission to 85% of the available seats in every course shall be
+          reserved in favour of the local candidates in relation to local area
+          in respect of Osmania university and the remaining 15% of seats are
+          left unreserved for which both local and non local candidates can
+          compete.
+        </p>
+        <h3 class="three-3">BC, SC and ST Candidates :</h3>
+        <p class="para-three">
+          Of the total of seats available in each course the following is the
+          schedule of reservation of seats in these categories
+        </p>
+        <table class="table table-bordered w-auto">
+          <thead>
+            <tr>
+              <th scope="col"><strong>category</strong></th>
+              <th scope="col"><strong>Percentage</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Backward class</td>
+              <td>25%</td>
+            </tr>
+            <tr>
+              <td>Group-A</td>
+              <td>7%</td>
+            </tr>
+            <tr>
+              <td>Group-B</td>
+              <td>10%</td>
+            </tr>
+            <tr>
+              <td>Group-C</td>
+
+              <td>1%</td>
+            </tr>
+            <tr>
+              <td>Group-D</td>
+              <td>7%</td>
+            </tr>
+            <tr>
+              <td>Scheduled Caste</td>
+              <td>15%</td>
+            </tr>
+            <tr>
+              <td>Scheduled Tribe</td>
+              <td>6%</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2 class="second">Woman :</h2>
+        <p class="para">
+          The statutory rules for the reservation of seats will be followed.
+        </p>
+        <h3 class="three-3">Other Reserved Categories:</h3>
+        <div class="course">
+          <p class="para">
+            It covers Sports and Games / Extra-Curricular Activities /
+            Physically Handicapped / NCC / Children of Ex-Servicemen and Army
+            Personnel.
+          </p>
+          <ul>
+            <li>
+              <strong>Sports/NCC/NSS:</strong> One seat for every block (30
+              seats) with a minimum of one seat taking the College as one Unit
+              and it shall be reserved for Sports/NCC/NSS categories all put
+              together in each of the courses.
+            </li>
+            <li>
+              <strong>Children of Armed personnel etc:</strong> One seat for
+              every block (of 30 seats) with a minimum of one seat taking the
+              college as one Unit and it shall be reserved for Physically
+              Handicapped Candidates. For courses involving practicals their
+              eligibility will be decided by a Committee appointed for this
+              purpose.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+{% endblock content %}

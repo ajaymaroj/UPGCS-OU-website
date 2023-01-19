@@ -1,0 +1,127 @@
+{% extends "Base.html" %}
+{% load static %}
+
+{%  block content  %}
+
+
+<style>
+  *{
+       font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .dept-pics {
+    height: 200px;
+    width: auto;
+    padding-left: 55%;
+    margin-bottom: 5%;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .dept-heading {
+    margin-left: 30%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    font-weight: bolder;
+
+  }
+
+  .eng-dept-text{
+    margin-top: 10px;
+    font-weight: bold;
+  }
+</style>
+<h1 class="dept-heading">DEPARTMENT OF ENGLISH</h1>
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static 'pics/eng-mrudala-pic.jpeg'%}" class="dept-pics" alt="pic supposed to be here">
+    </div>
+    <div class="col-sm">
+      <div class="eng-dept-text">
+      <h5>Dr Mrudula Lakkaraju</h5>
+      <h5> MA, PGDES, PhD</h5>
+      <h5> Assistant Professor & I/C Head</h5>
+      <h5> 09948243345</h5>
+      <h5>dr.mrudulalakkaraju@gmail.com</h5>
+    </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static 'pics/eng-srinivas-pic.png'%}" class="dept-pics" alt="pic supposed to be here">
+    </div>
+    <div class="col-sm">
+      <div class="eng-dept-text">
+        <h5>Mr A Srinivas</h5>
+        <h5> MA, PGCTE, PGDTE, CSS, (PhD) </h5>
+        <h5> Assistant Professor (C)</h5>
+        <h5>9849940460</h5>
+        <h5>	sriniambati6@gmail.com</h5>
+    </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static 'pics/eng-arun-pic.png'%}" class="dept-pics" alt="pic supposed to be here">
+    </div>
+    <div class="col-sm">
+      <div class="eng-dept-text">
+        
+
+
+
+	arunglads@gmail.com
+        <h5>Dr T Arun Kumar</h5>
+        <h5> MA, MPhil, PhD, SET </h5>
+        <h5> Assistant Professor (C)</h5>
+        <h5>9959595663</h5>
+        <h5>	sriniambati6@gmail.com</h5>
+      </div>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static 'pics/eng-kiran-pic.png'%}" class="dept-pics" alt="pic supposed to be here">
+    </div>
+    <div class="col-sm">
+      Mrudala Lakkraju
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static 'pics/eng-samuel-pic.png'%}" class="dept-pics" alt="pic supposed to be here">
+    </div>
+    <div class="col-sm">
+      Mrudala Lakkraju
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static 'pics/eng-srujana-pic.png'%}" class="dept-pics" alt="pic supposed to be here">
+    </div>
+    <div class="col-sm">
+      Mrudala Lakkraju
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <img src="{% static 'pics/eng-momatha-pic.png'%}" class="dept-pics" alt="pic supposed to be here">
+    </div>
+    <div class="col-sm">
+      Mrudala Lakkraju
+    </div>
+
+  </div>
+</div>
+
+
+{% endblock content %}

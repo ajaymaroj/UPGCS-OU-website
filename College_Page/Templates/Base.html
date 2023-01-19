@@ -1,0 +1,700 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UPGCS - University Post Graduate College Secunderabad</title>
+
+    <!--google fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lexend:wght@300&family=Open+Sans:wght@300&family=Raleway&family=Roboto+Slab:wght@300&family=Roboto:wght@300&family=Space+Grotesk&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <!-- external css link -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/quaries.css' %}" />
+
+    <!-- bootstrap css  link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <header>
+      <!-- nav bar  -->
+      <nav class="navbar navbar-expand-lg navbar fixed-top nav">
+        <img
+          class="navbar-logo"
+          src="{% static 'pics/ou-modified.png' %}"
+          alt="My image"
+        />
+
+        <!-- <div class="container-fluid "> -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link links"
+                aria-current="page"
+                href="{% url 'home' %}"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="{% url 'university-profile' %}"
+                    >University Profile</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'college-profile' %}"
+                    >College Profile</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{% url 'administrative-staff' %}"
+                    >Vision & Mission</a
+                  >
+                </li>
+
+                <!-- <li><a class="dropdown-item" href="#">Principal's Message</a></li> -->
+                <li>
+                  <a class="dropdown-item" href="#">Important Visitors</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Distinguished Alumni</a>
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{% url 'administrative-structure' %}"
+                    >Administrative Structure</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                Admissions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="{% url 'courses-offered' %}"
+                    >Courses Offered</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{% url 'procedure_for_admission' %}"
+                    >Procedure for Admissions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{% url 'eligibility-for-admission' %}"
+                    >Eligibility for Admissions</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'fee-structure'%}"
+                    >Fee Structure</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'reservations'%}"
+                    >Reservations</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'scholarships'%}"
+                    >Scholarships</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'rules'  %}">Rules</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                Departments
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="{% url 'dept_of_english' %}"
+                    >Department of English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{% url 'procedure_for_admission' %}"
+                    >Department of Economics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="{% url 'eligibility-for-admission' %}"
+                    >Department of History</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'fee-structure'%}"
+                    >Department of Public Administration</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'reservations'%}"
+                    >Department of Commerce</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'scholarships'%}"
+                    >Department of Political Science</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'rules'  %}"
+                    >Department of Maths</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'rules'  %}"
+                    >Department of Chemistry</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'rules'  %}"
+                    >Department of Physics</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'rules'  %}"
+                    >Department of Computer Science</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'rules'  %}"
+                    >Other Languages</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside" aria-expanded="false">
+              Departments
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Department of Commerce</a></li>
+
+              <li><a class="dropdown-item" href="#"> UG &raquo;</a>
+                <ul class="dropdown-menu submenu">
+                  
+                  <li><a class="dropdown-item" href="#">Department of Physics</a></li>
+                  <li><a class="dropdown-item" href="#">Department of Chemistry</a></li>
+                  <li><a class="dropdown-item" href="#">Department of Maths</a></li>
+                  <li><a class="dropdown-item" href="#">Department of Computer Science</a></li>
+                  <li><a class="dropdown-item" href="#">BA(HEP)</a></li>
+                  <li><a class="dropdown-item" href="#">BA(EEP)</a></li>
+
+                </ul>
+              </li> -->
+
+            <!-- <li><a class="dropdown-item" href="#"> PG &raquo;</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="#">Department of Political Science</a></li>
+                  <li><a class="dropdown-item" href="#">Department of Computer Science</a></li>
+                  <li><a class="dropdown-item" href="#">Department of English</a></li>
+                  <li><a class="dropdown-item" href="#">Department of Economics</a></li>
+                  <li><a class="dropdown-item" href="#">Department of M.Com</a></li>
+                 
+                  <li><a class="dropdown-item" href="#">Department of Telugu</a></li>
+                  <li><a class="dropdown-item" href="#">Department of History</a></li>
+                  <li><a class="dropdown-item" href="#">Department of Public Administration</a></li>
+
+                </ul>
+              </li>
+
+
+              <li><a class="dropdown-item" href="#">BCA</a></li>
+              <li><a class="dropdown-item" href="#">MCA</a></li>
+
+
+          </li> -->
+
+            <!-- </ul>
+        </li> -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                E-resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">E-book</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                Examination Branch
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#">Incharge/Academic heads</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Notifications</a></li>
+                <li><a class="dropdown-item" href="#">TimeTable</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                Almanac
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">UG</a></li>
+                <li><a class="dropdown-item" href="#">PG</a></li>
+
+                <li>
+                  <a class="dropdown-item" href="#"> BCA &raquo;</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="#">1st year CBCS</a></li>
+                    <li><a class="dropdown-item" href="#">2nd year CBCS</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">3rd year Non-CBCS</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#"> MCA &raquo;</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="#">1st year CBCS</a></li>
+                    <li><a class="dropdown-item" href="#">2nd year CBCS</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">3rd year Non-CBCS</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Syllabus
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">UG &raquo;</a>
+                  <ul class="dropdown-menu submenu">
+                    <li>
+                      <a class="dropdown-item" href="#">B.Com &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                        <li>
+                          <a class="dropdown-item" href="#">B.com General</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">B.com Computers</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#">B.Sc &raquo;</a>
+                      <ul class="dropdown-menu submenu">
+                        <li><a class="dropdown-item" href="#">1st year</a></li>
+                        <li><a class="dropdown-item" href="#">2nd year</a></li>
+                        <li><a class="dropdown-item" href="#">3rd year</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">B.A(HEP)</a></li>
+                    <li><a class="dropdown-item" href="#">B.A(EEP)</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#"> PG &raquo;</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="#">M.Com</a></li>
+                    <li><a class="dropdown-item" href="#">M.S.W</a></li>
+                    <li><a class="dropdown-item" href="#">M.A (Pol.Sci)</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">M.A (Economics)</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">M.A (History)</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">M.A (Pub.Admin)</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">M.A (English)</a></li>
+                    <li><a class="dropdown-item" href="#">M.A (Hindi)</a></li>
+                  </ul>
+                </li>
+
+                <li><a class="dropdown-item" href="#">BCA</a></li>
+                <li><a class="dropdown-item" href="#">MCA</a></li>
+              </ul>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside" aria-expanded="false">
+            TimeTable
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#"> UG &raquo;</a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="#">B.Com</a>
+                <li><a class="dropdown-item" href="#">B.Sc</a>
+                <li><a class="dropdown-item" href="#">B.A(HEP)</a>
+                <li><a class="dropdown-item" href="#">B.A(EEP)</a>
+
+              </ul>
+            </li> -->
+
+            <!-- <li><a class="dropdown-item" href="#"> PG &raquo;</a>
+              <ul class="dropdown-menu submenu">
+                <li><a class="dropdown-item" href="#">M.Com</a>
+                <li><a class="dropdown-item" href="#">M.S.W</a>
+                <li><a class="dropdown-item" href="#">M.A (Pol.Sci)</a>
+                <li><a class="dropdown-item" href="#">M.A (Economics)</a>
+                <li><a class="dropdown-item" href="#">M.A (History)</a>
+                <li><a class="dropdown-item" href="#">M.A (Pub.Admin)</a>
+                <li><a class="dropdown-item" href="#">M.A (English)</a>
+                <li><a class="dropdown-item" href="#">M.A (Hindi)</a>
+
+
+
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#">BCA</a></li>
+            <li><a class="dropdown-item" href="#">MCA</a></li>
+
+          </ul>
+        </li> -->
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                Facilities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >ICC(Internal Complaints Committee)</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> IQAC &raquo;</a>
+                  <ul class="dropdown-menu submenu">
+                    <li><a class="dropdown-item" href="#">About IQAC</a></li>
+                    <li><a class="dropdown-item" href="#">Members</a></li>
+                    <li><a class="dropdown-item" href="#">Activities</a></li>
+                    <li><a class="dropdown-item" href="#">NAAC</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Women Empowerment Cell</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Physical Education</a>
+                </li>
+
+                <li><a class="dropdown-item" href="#">Library</a></li>
+                <li><a class="dropdown-item" href="#">Placement Cell</a></li>
+                <li><a class="dropdown-item" href="#">Health Centre</a></li>
+                <li><a class="dropdown-item" href="#">NCC </a></li>
+                <li><a class="dropdown-item" href="#">NSS </a></li>
+              </ul>
+            </li>
+
+            <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            data-bs-auto-close="outside" aria-expanded="false">
+            Students List
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">UG</a></li>
+            <li><a class="dropdown-item" href="#">PG</a></li>
+
+          </ul>
+        </li> -->
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle links"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+                aria-expanded="false"
+              >
+                PG Hostel
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Notices</a></li>
+                <li>
+                  <a class="dropdown-item" href="{% url 'boys_hostel' %}"
+                    >Gnana Gangotri Hostel (Boys)</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">CHW4(Girls)</a></li>
+                <li><a class="dropdown-item" href="#">Rules</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link Important-contact"
+                aria-current="page"
+                href="{% url 'home' %}"
+                >ContactUs</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- </div> -->
+      </nav>
+
+      <div class="ou-head container-fluid">
+        <img
+          src="{% static 'pics/uni-block-pic.png' %}"
+          class="uni-block-pic"
+          alt="pic"
+        />
+      </div>
+
+      <!-- <div class="container-fluid"> -->
+
+      <!-- </div> -->
+    </header>
+  </head>
+
+  <body>
+    {% block content %} {% endblock content %}
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <div class="container-fluid">
+    <footer class="text-center text-lg-start text-muted">
+      <!-- Section: Links  -->
+      <section class="footer-text">
+        <!-- <div class="container text-center text-md-start mt-5"> -->
+        <!-- Grid row -->
+        <div class="row mt-0 ga">
+          <!-- Grid column -->
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img
+              class="img"
+              src="{% static 'pics/ou-modified.png' %}"
+              alt="My image"
+            />
+            <p class="clg-name">
+              University Post Graduate College, Secunderabad
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+
+            <h6 class="text-uppercase fw-bold mb-4">Quick links</h6>
+            <p>
+              <a href="#!" class="text-reset-one">Students Attendence</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset-one">Students List</a>
+            </p>
+
+            <p>
+              <a href="#!" class="text-reset-one">Examination Branch</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset-one">Image Gallery</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset-one">Downloads</a>
+              <a href="#!" class="text-reset-one">Downloads</a>
+            </p>
+
+            <p>
+              <a href="#!" class="text-reset-one">Videos</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Important links</h6>
+            <p>
+              <a href="#!" class="text-reset-one">Osmania University</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset-one">Nizam Collage</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset-one"
+                >University Collage for women</a
+              >
+            </p>
+            <p>
+              <a href="#!" class="text-reset-one">ICSSR-SRC</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset-one">UGC</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div
+            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-reset-one"
+          >
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+            <p class="para-text">
+              <ion-icon name="location-outline"></ion-icon>
+
+              University Post Graduate College, Sardar Patel Road,
+            </p>
+            <p>Secunderabad - 500003,</p>
+            <p>Telangana, India</p>
+            <p>
+              <ion-icon name="call-outline"></ion-icon>
+
+              +91 040 2790 2169
+            </p>
+            <p>
+              <ion-icon name="mail-open-outline"></ion-icon>
+              oupgcs@gmail.com
+            </p>
+          </div>
+
+          <!-- Grid column -->
+        </div>
+
+        <!-- Grid row -->
+        <!-- </div> -->
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="p-4 Copyright-text">
+        Copyright © 2017-2021 Osmania University. All Rights Reserved
+      </div>
+      <!-- Copyright -->
+
+      <!-- Footer -->
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+    </footer>
+  </div>
+</html>
